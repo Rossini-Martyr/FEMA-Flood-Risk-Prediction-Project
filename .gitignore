@@ -1,0 +1,14 @@
+# Environments
+.venv/
+env/
+venv/
+bin/
+obj/
+
+# Python leftovers
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
