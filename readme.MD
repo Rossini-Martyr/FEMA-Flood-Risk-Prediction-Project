@@ -26,3 +26,6 @@ SHAP analysis revealed that **Year of Loss** and **Water Depth** are the primary
 This project utilizes the National Risk Index (NRI) dataset provided by FEMA.
 
 [Link to FEMA NRI](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2)
+
+## ✍️ Author
+**Rossini Martyr** [https://www.linkedin.com/in/rossinimartyr/]
