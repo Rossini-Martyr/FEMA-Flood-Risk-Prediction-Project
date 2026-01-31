@@ -2,6 +2,8 @@
 
 An end-to-end machine learning project predicting building damage ratios using FEMA's National Flood Insurance Program (NFIP) claims data.
 
+![FEMA Risk App Demo](./project_demo.gif)
+
 ## 🚀 Project Overview
 This project moves beyond simple regression to address real-world data challenges: **Zero-inflation, high missingness (60%), and physical data anomalies.**
 
@@ -22,4 +24,5 @@ SHAP analysis revealed that **Year of Loss** and **Water Depth** are the primary
 
 ## Data Source
 This project utilizes the National Risk Index (NRI) dataset provided by FEMA.
+
 [Link to FEMA NRI](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2)
