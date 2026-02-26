@@ -5,7 +5,7 @@ An end-to-end machine learning project predicting building damage ratios using F
 ![FEMA Risk App Demo](./project_demo.gif)
 
 ## 🚀 Project Overview
-This project moves beyond simple regression to address real-world data challenges: **Zero-inflation, high missingness (60%), and physical data anomalies.**
+This project uses FEMA data to predict building damage ratios for Florida properties at risk of flooding. Key challenges found were: data imbalance with many zero damage findings, high missingness (60%), and physical data anomalies.**
 
 ### Key Technical Achievements:
 * **Data Audit & Cleaning:** Identified and removed physically impossible values (negative water depth/elevation) from central tendency calculations to prevent imputation bias.
@@ -29,3 +29,4 @@ This project utilizes the National Risk Index (NRI) dataset provided by FEMA.
 
 ## ✍️ Author
 **Rossini Martyr** [https://www.linkedin.com/in/rossinimartyr/]
+
