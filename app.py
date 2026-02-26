@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# 1. Load the model and the metadata (Memory)
-# Ensure these files are in the same folder as this script
+# 1. Load the model and the metadata
+
 try:
     model = joblib.load('flood_model_v1.pkl')
     meta = joblib.load('model_metadata.pkl')
@@ -48,8 +48,7 @@ if st.button("Generate Risk Assessment"):
     # Create a DataFrame with all columns used during training, initialized to 0
     input_df = pd.DataFrame(0, index=[0], columns=meta['all_features'])
     
-    # 2. FILL BACKGROUND FEATURES (From Metadata Defaults)
-    # This handles the 8 default features you specified
+    # 2. FILL BACKGROUND FEATURES 
     for feature, value in meta['defaults'].items():
         if feature in input_df.columns:
             input_df[feature] = value
@@ -64,7 +63,7 @@ if st.button("Generate Risk Assessment"):
     # 4. RUN PREDICTION
     prediction = model.predict(input_df)[0]
     
-    # Bound the prediction between 0 and 1 (100%) for realism
+    # Bound the prediction between 0 and 100%
     display_pred = max(0, min(prediction, 1.0))
 
     # 5. DISPLAY RESULTS
@@ -78,7 +77,7 @@ if st.button("Generate Risk Assessment"):
         risk_level = "High" if display_pred > 0.4 else "Moderate" if display_pred > 0.15 else "Low"
         st.write(f"**Risk Level:** {risk_level}")
 
-    # Interpretation based on your SHAP findings
+    # Interpretation based on SHAP findings
     st.info(f"""
     **Insight:** A damage ratio of {display_pred:.2%} suggests that for a house valued at $300k, 
     estimated structural losses would be around ${300000 * display_pred:,.0f}.
