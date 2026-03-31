@@ -8,7 +8,7 @@ An end-to-end machine learning project predicting building damage ratios using F
 This project uses FEMA data to predict building damage ratios for Florida properties at risk of flooding. Key challenges found were: data imbalance with many zero damage findings, high missingness (60%), and physical data anomalies.**
 
 ## Key Technical Achievements
-* Advanced Data Sanitization: Conducted a forensic audit of FEMA NRI records to identify and isolate physically impossible values (e.g., negative water depths/elevations), ensuring baseline central tendencies remained unbiased for imputation.
+* Data Cleaning: Conducted a forensic audit of FEMA NRI records to identify and isolate physically impossible values (e.g., negative water depths/elevations), ensuring baseline central tendencies remained unbiased for imputation.
 
 * Targeted Feature Engineering: Derived high-signal variables including age_of_property. SHAP validation confirmed these as top-tier predictors of structural resilience.
 
