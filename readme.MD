@@ -38,9 +38,9 @@ The model was validated using SHAP (SHapley Additive exPlanations) to ensure tha
 ## Data Source
 This project utilizes the National Risk Index (NRI) dataset provided by FEMA.
 
-Open `Flood Risk Damage Predictions Notebook v2.ipynb` to see the full pipeline from data cleaning to visualization.
 [Link to FEMA NRI](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2)
 
+Open `Flood Risk Damage Predictions Notebook v2.ipynb` to see the full pipeline from data cleaning to visualization.
 
 ## ✍️ Author
 **Rossini Martyr** [https://www.linkedin.com/in/rossinimartyr/]
